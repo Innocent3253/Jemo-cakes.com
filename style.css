@@ -1,0 +1,255 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdf5e6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff9aa2;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fdf5e6;
+}
+
+/* Hero Section */
+.hero-image {
+    background-image: url('hero.jpg'); /* Use your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-image h2 {
+    font-size: 3em;
+    font-family: 'Brush Script MT', cursive;
+    color: #ff9aa2;
+}
+
+.hero-image p {
+    font-size: 1.2em;
+}
+
+.hero-image .btn {
+    background-color: #ff9aa2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero-image .btn:hover {
+    background-color: #ff707f;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5em;
+    color: #ff9aa2;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    background-color: #ffe3e3;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #ff9aa2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Order Form Section */
+#order {
+    padding: 50px 20px;
+    background-color: #fdf5e6;
+    text-align: center;
+}
+
+#order h2 {
+    color: #ff9aa2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff9aa2;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff707f;
+}
+
+/* Testimonials */
+#testimonials {
+    padding: 50px 20px;
+    background-color: #ffe3e3;
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: #ff9aa2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Contact */
+#contact {
+    padding: 50px 20px;
+    background-color: #fdf5e6;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #ff9aa2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff9aa2;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #fdf5e6;
+}
+
+/* Buttons */
+.btn {
+    background-color: #ff9aa2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff707f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+img{
+    hieght: 50px;
+    width: 100px;
+    border-radius: 50%;
+}
